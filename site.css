@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap');
+
+:root {
+    /* Light theme (default) */
+    --bg-gradient: linear-gradient(180deg, #F7F3EE 0%, #FFFFFF 100%);
+    --bg: #FFFFFF;
+    --text: #3C2F2F;
+    --muted: #8B7355;
+    --sidebar-bg: #fff7f0;
+    --accent: #A67C52;
+    --accent-contrast: #ffffff;
+    --card-bg: #FFFFFF;
+    --card-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    --card-hover-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    --card-border: rgba(0,0,0,0.08);
+    --card-border-strong: rgba(0,0,0,0.12);
+    --input-bg: #FFFFFF;
+    --input-border: #ddd;
+    --button-bg: #A67C52;
+    --button-text: #ffffff;
+    --button-hover-bg: #7F5539;
+    --progress-bg: #E8D9CC;
+    --progress-fill: #A67C52;
+    --quote-bg: #E8D9CC;
+    --quick-item-bg: #f5f0eb;
+    --quick-item-hover: #e8d9cc;
+    --link-color: #A67C52;
+    --link-hover: #8B6748;
+    --transition: 200ms ease;
+}
+
+/* Dark theme removed — site uses the default light variables only */
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-gradient);
+    color: var(--text);
+    overflow-y: scroll;
+    transition: background var(--transition), color var(--transition);
+}
+
+.app-shell {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 260px;
+    min-height: 100vh;
+    background: var(--sidebar-bg);
+    padding: 32px;
+    border-radius: 0 28px 28px 0;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+
+.sidebar { position: relative; }
+
+/* Toggle control removed */
+
+.sidebar h1 {
+    margin-bottom: 5px;
+    font-size: 32px;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.sidebar p {
+    color: var(--muted);
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 12px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.sidebar li a {
+    display: block;
+    padding: 14px 18px;
+    color: var(--accent-contrast);
+    text-decoration: none;
+    font-weight: 500;
+    background: var(--accent);
+    transition: background 0.25s var(--transition), transform 0.25s var(--transition);
+}
+
+.sidebar li a:hover,
+.sidebar li a.active {
+    filter: brightness(0.95);
+}
+
+/* Theme toggle styles removed */
+
+.sidebar li a:visited,
+.sidebar li a:link {
+    color: inherit;
+}
+
+.page-content {
+    flex: 1;
+    padding: 40px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+}
+
+.card {
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .app-shell {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-radius: 0 0 28px 28px;
+    }
+
+    .page-content {
+        padding: 24px;
+    }
+}

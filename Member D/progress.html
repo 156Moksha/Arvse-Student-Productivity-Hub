@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../site.css">
+    <link rel="stylesheet" href="progress.css">
+    <title>Session Progress</title>
+</head>
+<body>
+    <div class="app-shell">
+        <div class="sidebar">
+            <h1>Arvse</h1>
+            <p>calm productivity</p>
+            <ul>
+                <li><a href="../Member A/dashboard.html">🏠 Dashboard</a></li>
+                <li><a href="../Member B/goals.html">🎯 Goals</a></li>
+                <li><a href="../Member B/todo.html">✅ To-Do</a></li>
+                <li><a href="../Member C/promodoro.html">⏰ Pomodoro</a></li>
+                <li><a href="../Member C/reminder.html">🔔 Reminders</a></li>
+                <li><a href="progress.html" class="active">📈 Progress</a></li>
+                <li><a href="resource.html">📚 Resources</a></li>
+                <li><a href="../Member C/quotes.html">💭 Quotes</a></li>
+            </ul>
+        </div>
+        <div class="page-content">
+            <main class="page-shell">
+        <header class="page-header">
+            <div>
+                <p class="eyebrow">Progress</p>
+                <h1>Session coordination</h1>
+                <p class="intro">A quiet look at how you’re moving forward.</p>
+            </div>
+        </header>
+
+        <section class="status-grid">
+            <a href="../Member B/goals.html" class="status-card">
+                <p class="status-label">Goals</p>
+                <p class="status-value"><span id="goalsCompleted">3</span><small>/</small><span id="goalsTotal">4</span></p>
+                <p class="status-note">Goals achieved</p>
+            </a>
+
+            <a href="../Member B/todo.html" class="status-card">
+                <p class="status-label">Tasks</p>
+                <p class="status-value"><span id="tasksCompleted">1</span><small>/</small><span id="tasksTotal">3</span></p>
+                <p class="status-note">Tasks completed</p>
+            </a>
+
+            <a href="../Member C/promodoro.html" class="status-card">
+                <p class="status-label">Sessions</p>
+                <p class="status-value"><span id="sessionsCompleted">0</span><small>/</small><span id="sessionsTotal">8</span></p>
+                <p class="status-note">Focus sessions</p>
+            </a>
+        </section>
+
+        <section class="progress-panel">
+            <div class="progress-header">
+                <div>
+                    <h2>Overall progress</h2>
+                    <p id="overallSummary">3 / 4 · 75%</p>
+                </div>
+            </div>
+
+            <div class="progress-track">
+                <div id="overallFill" class="progress-fill"></div>
+            </div>
+
+            <div class="detail-grid">
+                <div class="detail-card">
+                    <p class="detail-title">Goals achieved</p>
+                    <p id="goalsDetail">3 / 4 · 75%</p>
+                </div>
+                <div class="detail-card">
+                    <p class="detail-title">Tasks completed</p>
+                    <p id="tasksDetail">1 / 3 · 33%</p>
+                </div>
+                <div class="detail-card">
+                    <p class="detail-title">Focus sessions</p>
+                    <p id="sessionsDetail">0 / 8 · 0%</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="summary-strip">
+            <div class="summary-pill">
+                <span id="summaryGoals">4</span>
+                <small>Goals</small>
+            </div>
+            <div class="summary-pill">
+                <span id="summaryTasks">3</span>
+                <small>Tasks</small>
+            </div>
+            <div class="summary-pill">
+                <span id="summarySessions">8</span>
+                <small>Sessions</small>
+            </div>
+        </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="progress.js"></script>

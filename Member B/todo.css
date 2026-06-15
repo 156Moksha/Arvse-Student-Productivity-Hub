@@ -1,0 +1,91 @@
+body{
+    background-color: floralwhite;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+.card{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.site-nav{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.site-nav a{
+    text-decoration: none;
+    color: #b28b72;
+    font-weight: 600;
+}
+
+label{
+    display: block;
+    text-align: left;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+input{
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+p{
+    color: gray;
+}
+
+button{
+    width: auto;
+    min-width: 120px;
+    padding: 12px 20px;
+    margin-top: 15px;
+    background: #b28b72;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#list{
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+}
+
+#list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5ebe0;
+    padding: 12px 14px;
+    border-radius: 12px;
+    margin-top: 12px;
+}
+
+#list li button{
+    background: #b28b72;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+ 

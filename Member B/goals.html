@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../site.css">
+    <link rel="stylesheet" href="goals.css">
+    <title>Student Goals</title>
+</head>
+
+<body>
+    <div class="app-shell">
+        <div class="sidebar">
+            <h1>Arvse</h1>
+            <p>calm productivity</p>
+            <ul>
+                <li><a href="../Member A/dashboard.html">🏠 Dashboard</a></li>
+                <li><a href="goals.html" class="active">🎯 Goals</a></li>
+                <li><a href="todo.html">✅ To-Do</a></li>
+                <li><a href="../Member C/promodoro.html">⏰ Pomodoro</a></li>
+                <li><a href="../Member C/reminder.html">🔔 Reminders</a></li>
+                <li><a href="../Member D/progress.html">📈 Progress</a></li>
+                <li><a href="../Member D/resource.html">📚 Resources</a></li>
+                <li><a href="../Member C/quotes.html">💭 Quotes</a></li>
+            </ul>
+        </div>
+        <div class="page-content">
+            <div class="card">
+                <h1>Goals</h1>
+    <p>Choose what matters most this season.</p>
+
+    <label for="meaningful_goal">A meaningful goal</label>
+    <input type="text"
+           id="meaningful_goal"
+           placeholder="A meaningful goal...">
+
+    <select id="goal">
+        <option>Study</option>
+        <option>Health</option>
+        <option>Career</option>
+        <option>Mindfulness</option>
+        <option>Creativity</option>
+        <option>Finance</option>
+    </select>
+
+    <button type="button" onclick="addGoal()">+ Add</button>
+    <p id="goalSummary" class="summary-text">0 of 0 goals completed</p>
+    <div id="result"></div>
+
+            </div>
+        </div>
+    </div>
+<script src="goals.js"></script>
+<!-- dark mode removed: no theme script -->
+</body>
+</html>

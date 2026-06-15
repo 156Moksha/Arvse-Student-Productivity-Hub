@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminder System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../site.css">
+    <link rel="stylesheet" href="reminder.css">
+</head>
+
+<body>
+    <div class="app-shell">
+        <div class="sidebar">
+            <h1>Arvse</h1>
+            <p>calm productivity</p>
+            <ul>
+                <li><a href="../Member A/dashboard.html">🏠 Dashboard</a></li>
+                <li><a href="../Member B/goals.html">🎯 Goals</a></li>
+                <li><a href="../Member B/todo.html">✅ To-Do</a></li>
+                <li><a href="../Member C/promodoro.html">⏰ Pomodoro</a></li>
+                <li><a href="reminder.html" class="active">🔔 Reminders</a></li>
+                <li><a href="../Member D/progress.html">📈 Progress</a></li>
+                <li><a href="../Member D/resource.html">📚 Resources</a></li>
+                <li><a href="../Member C/quotes.html">💭 Quotes</a></li>
+            </ul>
+        </div>
+        <div class="page-content">
+            <div class="container">
+                <div class="content-wrapper">
+                    <div class="left-section">
+                        <h1>Reminder System</h1>
+                        <p class="subtitle">Set reminders with a clear time so nothing slips through.</p>
+                    </div>
+                    <div class="right-section">
+                        <div class="card">
+                            <div class="input-row">
+                                <input id="task" class="input-field" placeholder="Enter reminder" autocomplete="off">
+                                <input id="time" class="time-input" type="time" aria-label="Reminder time">
+                            </div>
+                            <button id="addBtn">Add Reminder</button>
+                            <ul id="list"></ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<script src="reminder.js"></script>

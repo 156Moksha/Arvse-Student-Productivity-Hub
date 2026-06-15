@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arvse Dashboard</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../site.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <div class="app-shell">
+        <div class="sidebar">
+        <h1>Arvse</h1>
+        <p>calm productivity</p>
+
+       <ul>
+    <li><a href="dashboard.html" class="active">🏠 Dashboard</a></li>
+
+    <li><a href="../Member B/goals.html">🎯 Goals</a></li>
+
+    <li><a href="../Member B/todo.html">✅ To-Do</a></li>
+
+    <li><a href="../Member C/promodoro.html">⏰ Pomodoro</a></li>
+
+    <li><a href="../Member C/reminder.html">🔔 Reminders</a></li>
+
+    <li><a href="../Member D/progress.html">📈 Progress</a></li>
+
+    <li><a href="../Member D/resource.html">📚 Resources</a></li>
+
+    <li><a href="../Member C/quotes.html">💭 Quotes</a></li>
+</ul>
+    </div>
+        <div class="page-content">
+            <div class="main">
+
+        <p class="date" id="date"></p>
+
+        <h2>Good Evening</h2>
+        <p class="subtitle">A warm space to focus, learn, and build your skills.</p>
+
+        <div class="cards">
+
+<div class="card">
+    <h3>Today's Focus</h3>
+    <p>Complete HTML & CSS learning.</p>
+</div>
+
+<div class="card">
+    <h3>Progress</h3>
+    <p>Learning progress: 35%</p>
+
+    <div class="progress-bar">
+        <div class="progress-fill"></div>
+    </div>
+</div>
+
+<div class="card">
+    <h3>Pomodoro</h3>
+    <p>25 min focus session</p>
+</div>
+
+<div class="card">
+    <h3>Goals</h3>
+    <p>Finish Dashboard UI this week</p>
+</div>
+        </div>
+
+        <div class="bottom-section">
+
+            <div class="quote-box">
+                <h2>"You don't have to be extreme, just consistent."</h2>
+                <p>- Unknown</p>
+            </div>
+
+            <div class="quick-start">
+                <h2>Quick Start</h2>
+                <p>Pick where to begin today.</p>
+
+                <div class="quick-item">Start a focus session</div>
+                <div class="quick-item">Plan today's tasks</div>
+                <div class="quick-item">Review your goals</div>
+                <div class="quick-item">Read today's quote</div>
+            </div>
+
+        </div>
+        </div>
+    </div>
+
+    <script>
+        const dateEl = document.getElementById('date');
+        const now = new Date();
+        const options = { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' };
+        dateEl.textContent = now.toLocaleDateString('en-US', options);
+    </script>
+
+        <!-- dark mode removed: no theme script -->
+
+</body>
+
+</html>

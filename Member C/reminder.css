@@ -1,0 +1,174 @@
+body{
+    background:#FAF7F2;
+    font-family:Arial, sans-serif;
+    margin:0;
+    color:#3E2C23;
+    overflow-y: scroll;
+}
+
+.page-content .container,
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    width:100%;
+    padding: 0 20px;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+    margin-top: 40px;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-right: 20px;
+}
+
+.left-section h1 {
+    font-size: 42px;
+    font-weight: 600;
+    margin: 0 0 16px 0;
+    color: #3E2C23;
+}
+
+.right-section {
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle{
+    color:#8A7A6E;
+    margin-bottom:20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.card{
+    background:#FFFFFF;
+    padding:32px;
+    border-radius:24px;
+    width:100%;
+    max-width:460px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.input-row{
+display:grid;
+gap:14px;
+margin-bottom:18px;
+}
+
+.input-field,
+.time-input{
+width:100%;
+padding:14px 16px;
+border:1px solid #8A7C6E;
+border-radius:12px;
+font-size:16px;
+color:#3E2C23;
+background:#FCF8F2;
+}
+
+.input-field:focus,
+.time-input:focus{
+outline:none;
+border-color:#A67C52;
+box-shadow:0 0 0 4px rgba(166,124,82,0.12);
+}
+
+button{
+background:#A67C52;
+color:white;
+border:none;
+padding:14px 18px;
+border-radius:12px;
+cursor:pointer;
+transition:transform 0.25s ease, background-color 0.25s ease;
+width:100%;
+font-size:16px;
+}
+
+button:hover{
+background:#7F5539;
+transform:scale(1.02);
+}
+
+#list{
+padding:0;
+margin-top:28px;
+}
+
+#list li{
+    list-style:none;
+    background:#F2E8DC;
+    padding:16px;
+    margin-top:12px;
+    border-radius:14px;
+    color:#3E2C23;
+    box-shadow:0 2px 8px rgba(0,0,0,0.04);
+    transition: all 0.2s ease;
+}
+
+#list li:hover {
+    background: #E8DCC8;
+    transform: translateY(-2px);
+}
+
+.reminder-item{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:16px;
+}
+
+.reminder-text{
+font-weight:600;
+}
+
+.reminder-time{
+    font-size:14px;
+    color:#7F5539;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .left-section {
+        padding-right: 0;
+        text-align: center;
+    }
+    
+    .left-section h1 {
+        font-size: 32px;
+    }
+    
+    .right-section {
+        justify-content: center;
+    }
+}
+
+.remove-btn{
+border:none;
+background:transparent;
+color:#7F5539;
+font-weight:700;
+cursor:pointer;
+transition:color 0.2s ease;
+}
+
+.remove-btn:hover{
+color:#A67C52;
+}

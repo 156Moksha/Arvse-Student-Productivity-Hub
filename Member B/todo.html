@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../site.css">
+    <link rel="stylesheet" href="todo.css">
+    <title>Student To-Do List</title>
+</head>
+<body>
+    <div class="app-shell">
+        <div class="sidebar">
+            <h1>Arvse</h1>
+            <p>calm productivity</p>
+            <ul>
+                <li><a href="../Member A/dashboard.html">🏠 Dashboard</a></li>
+                <li><a href="../Member B/goals.html">🎯 Goals</a></li>
+                <li><a href="todo.html" class="active">✅ To-Do</a></li>
+                <li><a href="../Member C/promodoro.html">⏰ Pomodoro</a></li>
+                <li><a href="../Member C/reminder.html">🔔 Reminders</a></li>
+                <li><a href="../Member D/progress.html">📈 Progress</a></li>
+                <li><a href="../Member D/resource.html">📚 Resources</a></li>
+                <li><a href="../Member C/quotes.html">💭 Quotes</a></li>
+            </ul>
+        </div>
+        <div class="page-content">
+            <div class="card">
+                <h1>To-Do</h1>
+        <p>Tasks remaining</p>
+
+        <label for="task">Task</label>
+        <input type="text" id="task" name="task" placeholder="Write your task here">
+        <button type="button" onclick="addTask()">Add</button>
+        <p id="todoSummary" class="summary-text">0 of 0 tasks complete</p>
+        <ul id="list"></ul>
+    </div>
+        </div>
+    </div>
+
+    <script src="todo.js"></script>

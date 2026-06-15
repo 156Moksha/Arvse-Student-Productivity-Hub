@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-gradient);
+    color: var(--text);
+    min-height: 100vh;
+    overflow-y: scroll;
+}
+
+.page-shell {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 36px 24px 48px;
+}
+
+.page-header {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 32px;
+}
+
+.eyebrow {
+    font-size: 0.95rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #8A7A6E;
+}
+
+.page-header h1,
+.progress-header h2,
+.status-card .status-label,
+.detail-title,
+.summary-pill small {
+    font-family: 'Poppins', sans-serif;
+}
+
+.page-header h1 {
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    line-height: 1.05;
+    font-weight: 700;
+}
+
+.intro {
+    max-width: 620px;
+    color: #8A7A6E;
+    font-size: 1rem;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+.status-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 32px;
+}
+
+.status-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 22px;
+    padding: 28px;
+    box-shadow: var(--card-shadow);
+}
+
+.status-label {
+    font-size: 1rem;
+    color: var(--muted);
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.status-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: -0.03em;
+}
+
+.status-value small {
+    font-size: 1.2rem;
+    color: var(--text);
+    margin: 0 6px;
+    font-weight: 400;
+}
+
+.status-note {
+    margin-top: 12px;
+    color: var(--muted);
+    font-size: 0.95rem;
+    font-weight: 300;
+}
+
+.progress-panel {
+    background: var(--card-bg);
+    border-radius: 28px;
+    padding: 28px;
+    margin-bottom: 32px;
+}
+
+.progress-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 22px;
+}
+
+.progress-header h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text);
+}
+
+.progress-header p {
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.progress-track {
+    width: 100%;
+    height: 18px;
+    background: var(--progress-bg);
+    border-radius: 999px;
+    overflow: hidden;
+    margin-bottom: 24px;
+    border: 1px solid var(--card-border);
+}
+
+.progress-fill {
+    width: 0%;
+    height: 100%;
+    background: var(--progress-fill);
+    transition: width 0.3s ease;
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.detail-card {
+    background: var(--card-bg);
+    border-radius: 18px;
+    padding: 18px 20px;
+    border: 1px solid var(--card-border-strong);
+}
+
+.detail-title {
+    font-size: 1rem;
+    color: var(--text);
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.detail-card p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.summary-strip {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.summary-pill {
+    flex: 1;
+    min-width: 170px;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    padding: 18px 20px;
+    text-align: center;
+}
+
+.summary-pill span {
+    display: block;
+}
+
+.summary-pill span:first-child {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.summary-pill small {
+    margin-top: 6px;
+    color: var(--muted);
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+@media (max-width: 860px) {
+    .status-grid,
+    .detail-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .page-shell {
+        padding: 24px 16px 36px;
+    }
+    .status-grid,
+    .detail-grid,
+    .summary-strip {
+        grid-template-columns: 1fr;
+    }
+    .summary-strip {
+        gap: 12px;
+    }
+}
